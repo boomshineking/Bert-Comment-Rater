@@ -1,0 +1,9 @@
+torch 
+torchvision 
+torchaudio
+transformers
+beautifulsoup4
+pandas
+numpy
+emoji
+streamlit
