@@ -2,7 +2,7 @@
 
 This is a lightweight Streamlit web app that uses a pre-trained BERT model to analyze the sentiment of user-entered comments and return a star rating (1 to 5). It's multilingual and powered by the `nlptown/bert-base-multilingual-uncased-sentiment` model via Hugging Face's Transformers library.
 
-🔗 **Live Demo:** [Click here to try the app](https://YOUR_HUGGINGFACE_SPACE_LINK_HERE)
+🔗 **Live Demo:** [Click here to try the app](https://bert-comment-rater-dgijhprgp75rvoqutpsxsw.streamlit.app/)
 
 ---
 
