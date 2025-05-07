@@ -11,6 +11,7 @@ sentiment_pipeline = load_model()
 # Streamlit UI
 st.title("💬 Comment Sentiment Rater")
 st.write("Enter a comment to get a sentiment rating using a BERT model.")
+st.write("Higher the score the more positive your comment is")
 
 user_input = st.text_area("Type your comment here")
 
