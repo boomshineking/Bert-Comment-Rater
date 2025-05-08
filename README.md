@@ -61,6 +61,8 @@ streamlit run app.py
 **Output:**  
 ⭐ Rating: 5 out of 5  
 🧠 Confidence: `0.98`
+![image](https://github.com/user-attachments/assets/b6bb8285-f5ee-4de8-a969-64b7a180f456)
+
 
 ---
 
