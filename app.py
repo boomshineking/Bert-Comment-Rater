@@ -9,9 +9,8 @@ def load_model():
 sentiment_pipeline = load_model()
 
 # Streamlit UI
-st.title("💬 Comment Sentiment Rater")
-st.write("Enter a comment to get a sentiment rating using a BERT model.")
-st.write("Higher the score the more positive your comment is")
+st.title("💬 Comment Sentiment Classifier")
+st.write("Enter a comment to see the star rating and whether it's Positive, Neutral, or Negative using a BERT model.")
 
 user_input = st.text_area("Type your comment here")
 
@@ -23,7 +22,18 @@ if st.button("Analyze"):
         
         # Extract star rating from label
         stars = int(label.split()[0])
-        st.markdown(f"**⭐ Rating:** {stars} out of 5")
+        
+        # Convert stars to sentiment
+        if stars <= 2:
+            sentiment = "Your comment is 👎Negative"
+        elif stars == 3:
+            sentiment = "Your comment is 😐Neutral"
+        else:
+            sentiment = "Your comment is Positive👍"
+        
+        # Display both star rating and sentiment
+        st.markdown(f"**⭐ Star Rating:** {stars} out of 5")
+        st.markdown(f"**📝 Sentiment:** {sentiment}")
         st.markdown(f"**🧠 Confidence:** `{score:.2f}`")
     else:
         st.warning("Please enter a comment to analyze.")
